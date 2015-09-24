@@ -11,15 +11,35 @@ module.exports = {
     mods : { theme : 'islands' },
     content : [
         {
-            block : 'header',
-            content : [
-                'header content goes here'
-            ]
-        },
-        {
-            block : 'footer',
-            content : [
-                'footer content goes here'
+            block: 'wrapper',
+            js: true,
+            content: [
+                {
+                    block : 'test',
+                    js: true,
+                    mix: [
+                        {
+                            block: 'wrapper',
+                            elem: 'test'
+                        }
+                    ],
+                    content : [
+                        'Test block',
+                        {
+                            elem: 'handler',
+                            content: 'Click me'
+                        },
+                        {
+                            elem: 'release',
+                            content: 'Timer called'
+                        }
+                    ]
+                },
+
+                {
+                    elem: 'handler',
+                    content: 'Click me too'
+                }
             ]
         }
     ]

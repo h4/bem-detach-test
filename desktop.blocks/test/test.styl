@@ -1,0 +1,35 @@
+$ctx = test
+$root = s('.%s', $ctx)
+
+{$root} {
+    width 200px
+    margin 20px auto
+    padding 20px
+    border solid
+
+    &_js_inited {
+        background #EEFFEE
+    }
+
+    &__handler {
+        margin-top 20px
+        padding 10px
+        color #FFF
+        background #F00
+        cursor pointer
+
+        &:hover {
+            background #900
+        }
+    }
+
+    &__release {
+        font-weight bold
+        display none
+        margin-top 20px
+
+        &_released {
+            display block
+        }
+    }
+}
