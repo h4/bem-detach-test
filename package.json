@@ -27,6 +27,7 @@
   },
   "scripts": {
     "start": "enb server",
+    "make": "enb make",
     "postinstall": "npm run deps",
     "deps": "bower i"
   },
